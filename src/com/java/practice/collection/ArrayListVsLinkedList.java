@@ -15,14 +15,14 @@ public class ArrayListVsLinkedList {
 		rollNosArrayList.add(5);
 		System.out.println(rollNosArrayList);
 		
-	/*	ListIterator<Integer> rolls = rollNosArrayList.listIterator();
+		ListIterator<Integer> rolls = rollNosArrayList.listIterator();
 		while(rolls.hasNext()){
 			System.out.println("Next value :"+rolls.next());
 			if(rolls.next() == 10)
 				System.out.println("Prev value :"+rolls.previous());
 			
 			
-		}*/
+		}
 	}
 
 }
