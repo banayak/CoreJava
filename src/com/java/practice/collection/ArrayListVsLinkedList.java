@@ -13,7 +13,7 @@ public class ArrayListVsLinkedList {
 		rollNosArrayList.add(100);
 		rollNosArrayList.add(10);
 		rollNosArrayList.add(5);
-		System.out.println(rollNosArrayList);
+		System.out.println(rollNosArrayList); 
 		
 		ListIterator<Integer> rolls = rollNosArrayList.listIterator();
 		while(rolls.hasNext()){
