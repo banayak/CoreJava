@@ -20,6 +20,7 @@ public class ArrayListVsLinkedList {
 			System.out.println("Next value :"+rolls.next());
 			if(rolls.next() == 10)
 				System.out.println("Prev value :"+rolls.previous());
+			//Test Commit diff
 			
 			
 		}
