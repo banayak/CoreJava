@@ -1,6 +1,6 @@
 package com.java.practice.collection;
 
-public class Student {
+public class Student implements Comparable{
 	private int rollNo;
 	private String firstname;
 	private String lastName;
@@ -67,6 +67,24 @@ public class Student {
 	public int hashCode() {
 		// TODO Auto-generated method stub
 		return super.hashCode()* rollNo+67;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return rollNo+",firstName:"+firstname+",lastName:"+lastName;
+	}
+
+	@Override
+	public int compareTo(Object obj) {
+		Student student1 = (Student) obj;
+		int result =0;
+			result = String.valueOf(this.getRollNo()).compareTo(String.valueOf(student1.getRollNo()));
+		if(result == 0)
+			result = this.getFirstname().compareTo(student1.getFirstname());
+		if(result == 0)
+			result = this.getLastName().compareTo(student1.getLastName());
+		return result;
 	}
 	
 	
