@@ -72,7 +72,7 @@ public class Student implements Comparable{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return rollNo+",firstName:"+firstname+",lastName:"+lastName;
+		return rollNo+",firstName:"+firstname+",lastName:"+lastName+",Home address :"+homeAddress;
 	}
 
 	@Override
