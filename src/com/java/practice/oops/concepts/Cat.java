@@ -4,6 +4,17 @@ public class Cat extends Animal {
 	private String catName;
 	private int catAge;
 
+	public Cat(String name, int age) {
+		super(name, age);
+		this.catName = name;
+		this.catAge = age;
+	}
+
+	public void displayAnimalInfo(){
+		System.out.println("Cat Name: " + this.catName+"\nCat  Age: " + this.catAge);
+	}
+
+
 	public String getCatName() {
 		return catName;
 	}
@@ -19,18 +30,4 @@ public class Cat extends Animal {
 	public void setCatAge(int catAge) {
 		this.catAge = catAge;
 	}
-	
-
-	public void showCatInformation() {
-		System.out.println("Animal Name :" + animalName + " ,age : "
-				+ animalAge);
-		System.out.println("Cat Name :" + catName + " , Cat age : " + catAge);
-
-	}
-
-	public void eat(String s) {
-		super.eat();
-		System.out.println("Horse eating hay, oats, " + "and horse treats"+animalName);
-	}
-
 }
