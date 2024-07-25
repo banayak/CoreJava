@@ -11,9 +11,15 @@ public class Cat extends Animal {
 	}
 
 	public void displayAnimalInfo(){
-		System.out.println("Cat Name: " + this.catName+"\nCat  Age: " + this.catAge);
+		System.out.println("Cat Name: " + this.catName+" , Cat  Age: " + this.catAge);
+		System.out.println("Animal Info : Animal Name :" +animalName +" , Animal Age :" +animalAge);
 	}
 
+	//Covariant Return Type
+	public Cat displayAnimalDetails(){
+		System.out.println("Cat Name: " + this.animalName+" , Cat Age: " + this.animalAge);
+		return new Cat("Leo",89);
+	}
 
 	public String getCatName() {
 		return catName;

@@ -8,9 +8,23 @@ public class Animal {
 		this.animalName = name;
 		this.animalAge = age;
 	}
+
+	public Animal(){
+		super();
+	}
 	
 	public void displayAnimalInfo(){
-		System.out.println("Animal Name: " + this.animalName+"\nAnimal Age: " + this.animalAge);
+		System.out.println("Animal Name: " + this.animalName+" , Animal Age: " + this.animalAge);
+	}
+
+	//Covariant Return Type
+	public Animal displayAnimalDetails(){
+		System.out.println("Animal Name: " + this.animalName+" , Animal Age: " + this.animalAge);
+		return new Animal("Leo",89);
+	}
+
+	public void displayAnimalInfo(String name, int age){
+		System.out.println("Overloaded Animal details , Name: " + name+"\nAnimal Age: " + age);
 	}
 
 	public String getAnimalName() {
