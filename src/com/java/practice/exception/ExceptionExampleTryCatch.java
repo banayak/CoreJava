@@ -1,5 +1,8 @@
 package com.java.practice.exception;
 
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class ExceptionExampleTryCatch {
 
 	public static void main(String[] args) {
@@ -15,7 +18,11 @@ public class ExceptionExampleTryCatch {
 			System.out.println(z);
 			System.out.println("end of program exceution");
 		}
-		catch (Exception e){
+		catch (ArithmeticException  e){
+			e.printStackTrace();
+			System.err.println("Error occured : "+e.getMessage());
+		}
+		catch (Exception  e){
 			e.printStackTrace();
 			System.err.println("Error occured : "+e.getMessage());
 		}

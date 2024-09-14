@@ -5,15 +5,21 @@ public class Animal {
 	 int animalAge ;
 
 	public Animal(String name, int age){
+		this(name,age,"black");
+	}
+
+	public Animal(String name, int age,String color){
+		super();
 		this.animalName = name;
 		this.animalAge = age;
 	}
 
 	public Animal(){
 		super();
+		//this("test",8);
 	}
 	
-	public void displayAnimalInfo(){
+	protected void displayAnimalInfo(){
 		System.out.println("Animal Name: " + this.animalName+" , Animal Age: " + this.animalAge);
 	}
 
@@ -23,7 +29,7 @@ public class Animal {
 		return new Animal("Leo",89);
 	}
 
-	public void displayAnimalInfo(String name, int age){
+	 public void displayAnimalInfo(String name, int age){
 		System.out.println("Overloaded Animal details , Name: " + name+"\nAnimal Age: " + age);
 	}
 

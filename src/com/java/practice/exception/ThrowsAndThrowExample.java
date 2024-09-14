@@ -31,8 +31,9 @@ public class ThrowsAndThrowExample {
 				// TODO Auto-generated catch block
 				//throw ex;
 				ex.printStackTrace();
-				throw new NullPointerException();
+				throw ex;
 			}
+			z=  x*8;
 		
 		return z;
 	}
