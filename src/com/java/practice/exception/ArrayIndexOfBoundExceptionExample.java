@@ -1,5 +1,7 @@
 package com.java.practice.exception;
 
+import java.io.FileNotFoundException;
+
 public class ArrayIndexOfBoundExceptionExample {
 
     public static void main(String[] args) {
@@ -8,14 +10,19 @@ public class ArrayIndexOfBoundExceptionExample {
 
         try {
             System.out.println("rollNumber of position value of 5 : " + rollNumber[5]);
-        }
-        catch (ArrayIndexOutOfBoundsException e) {            System.out.println("Inside ArrayIndexOutOfBoundsException ");
 
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Inside ArrayIndexOutOfBoundsException ");
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        int x =10* 50;
+        System.out.println("Value of x ::"+x);
+
+
 
 
     }
