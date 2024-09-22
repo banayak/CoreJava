@@ -7,7 +7,7 @@ public class StudentExample {
 		//student.setAge(25);
 		student.setName("Rama");		
 		System.out.println("Student name :"+student.getName()+" , age :"+student.getAge());
-
+		student.setName("Sankuru");
 	}
 
 }
