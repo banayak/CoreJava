@@ -11,14 +11,14 @@ public class ArrayListExample {
 		float b =67.0f;
 		//Wrapper Object
 		//Integer, Double,Float, Long, Decimal, BigDecimal
-		Integer rol = new Integer(10);
+		Integer rol = Integer.valueOf(10);
 		//without generics , we can add other data type number
 		
-		ArrayList studentRollNos = new ArrayList(); 
+		List  studentRollNos = new ArrayList();
 		studentRollNos.add(10);
 		studentRollNos.add(50.5);
 		studentRollNos.add("Bishu");
-		//System.out.println(studentRollNos);
+		System.out.println(studentRollNos);
 		
 		/*for( Object rollNo : studentRollNos){
 			int rollnumber = Integer.parseInt(rollNo.toString());
