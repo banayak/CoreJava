@@ -22,10 +22,12 @@ public class HashMapHashCode {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap<>(); 
-		concurrentHashMap.put(null,"abc");
+		//concurrentHashMap.put(null,"abc");
 		HashMap<Employee,String> myMap = new HashMap<Employee,String>();
 		Employee employee = new Employee(1, "Basanta");
+		System.out.println(employee.hashCode());
 		Employee e1 = new Employee(1, "Basanta");
+		System.out.println(e1.hashCode());
 		myMap.put(employee, employee.getName());
 		System.out.println("containks Key ::"+myMap.containsKey(e1)+" Value="+myMap.get(e1));
 		System.out.println("Comparing two object by commented hashcode ::"+employee.equals(e1));
