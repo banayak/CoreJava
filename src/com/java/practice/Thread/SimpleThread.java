@@ -5,6 +5,8 @@ public class SimpleThread extends Thread{
     public SimpleThread(String name){
         Thread.currentThread().setName(name);
     }
+    public SimpleThread(){
+    }
 
     @Override
     public void run(){
